@@ -1,0 +1,10 @@
+#version: '3'
+services: 
+  imagen1: 
+    build: ./imagen1
+    ports:
+      - "3000:3000"
+  imagen2: 
+    build: ./imagen2
+    ports:
+      - "8080:3000"
