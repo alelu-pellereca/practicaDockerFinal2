@@ -38,6 +38,10 @@ jobs:
         run: cd imagen1
       - name: Run Test
         run: npm run test
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: npm run start
   imagen2:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -60,3 +64,7 @@ jobs:
         run: cd imagen2
       - name: Run Test
         run: npm run test
+      - name: Build
+        run: npm run build
+      - name: Deploy
+        run: npm run start
