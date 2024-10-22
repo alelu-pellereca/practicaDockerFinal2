@@ -25,32 +25,41 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Cambiando el directorio
+      # Cambiando el directorio e instalando dependencias
       - run: 
          cd imagen1
+         npm install
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hola, world!
+      - name: Echo diciendo Hola
+        run: echo 'Hola imagen 1'
 
       # Runs a set of commands using the runners shell
-      - name: Correr a multi-line script
+      - name: Run Test
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          cd imagen1
+          npm run test
   imagen2:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-     - uses: actions/checkout@v4
-     # Cambiando el directorio
-     - run: 
-        cd imagen2
-    # Runs a set of commands using the runners shell
-     - run: |
-         echo Add other actions to build,
-         echo test, and deploy your project.
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Cambiando el directorio e instalando dependencias
+      - run: 
+         cd imagen2
+         npm install
+
+      # Runs a single command using the runners shell
+      - name: Echo diciendo Hola
+        run: echo 'Hola imagen 2'
+
+      # Runs a set of commands using the runners shell
+      - name: Run Test
+        run: |
+          cd imagen2
+          npm run test
   
