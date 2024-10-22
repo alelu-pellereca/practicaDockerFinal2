@@ -38,12 +38,8 @@ jobs:
         run: cd imagen1
       - name: Run Test
         run: npm run test
-      - name: Cambiando dir
-        run: cd imagen1
       - name: Build
         run: npm run build
-      - name: Cambiando dir
-        run: cd imagen1
       - name: Deploy
         run: npm run start
   imagen2:
@@ -68,11 +64,5 @@ jobs:
         run: cd imagen2
       - name: Run Test
         run: npm run test
-      - name: Cambiando dir
-        run: cd imagen2
-      - name: Build
-        run: npm run build
-      - name: Cambiando dir
-        run: cd imagen2
       - name: Deploy
         run: npm run start
