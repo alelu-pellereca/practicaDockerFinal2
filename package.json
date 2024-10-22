@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:nodemon": "nodemon src/index.js",
+"start:nodemon": "nodemon ./src/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "start": "node src/index.js",
