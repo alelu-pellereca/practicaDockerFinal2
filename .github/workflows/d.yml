@@ -34,8 +34,9 @@ jobs:
         run: echo 'Hola imagen 1'
 
       # Runs a set of commands using the runners shell
-      - name: Run Test
+      - name: Cambiando dir
         run: cd imagen1
+      - name: Run Test
         run: npm run test
   imagen2:
     # The type of runner that the job will run on
@@ -55,8 +56,7 @@ jobs:
         run: echo 'Hola imagen 2'
 
       # Runs a set of commands using the runners shell
+      - name: Cambiando dir
+        run: cd imagen2
       - name: Run Test
-        run: |
-          cd imagen2
-          npm run test
-  
+        run: npm run test
