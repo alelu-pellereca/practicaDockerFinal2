@@ -1,4 +1,4 @@
-const request = require('supertest');
+const request = require('express');
 const app = require('../src/app');
 
 describe('API Tests', () => {
