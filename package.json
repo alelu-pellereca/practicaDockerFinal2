@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node /src/index.js",
+    "start": "node /Users/pc/practicaDockerFinal2/practicaDockerFinal2/src/index.js",
     "watch": "npx watchify ./src/main.js -o ./public/bundle.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
